@@ -1,0 +1,23 @@
+{
+  "name": "@amoeba/image-url",
+  "version": "0.1.0",
+  "description": "Canonical image-URL builder for the amoeba.works constellation. Single source of truth for converting (bucket, path) → CDN URL.",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "test": "node --test dist/test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "5.6.3"
+  }
+}
